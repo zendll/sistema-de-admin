@@ -49,7 +49,7 @@ Dialog:D_ADMIN(playerid, response, listitem, inputtext[]) {
 
     if (strcmp(inputtext, TOKEN_ADMIN, true) == 0) { //sucess
 
-        PlayerInfo[playerid][ADMIN] = 1342;
+        PlayerInfo[playerid][ADMIN] = 7;
         SendClientMessage(playerid, -1, va_return("Você se tornou um admin Cargo %s", AdminsCargos(playerid)));
         AvisarAdmins(-1, va_return("blabla pop desehi %s", PlayerName(playerid)), 1);
         
