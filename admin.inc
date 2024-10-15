@@ -41,7 +41,7 @@ new PlayerInfo[MAX_PLAYERS][pinfo];
 //comandos
 
 CMD:padmin(playerid){
-    return Dialog_Show(playerid, D_ADMIN, DIALOG_STYLE_INPUT, "Token Admin","Digite o token admin abaixo","Confirmar"," Sair");//retorna dialog pra digita o token
+    return Dialog_Show(playerid, D_ADMIN, DIALOG_STYLE_INPUT, "Token Admin","Digite o token admin abaixo","Confirmar"," Sair");//dialog pra digita o token
 }
 Dialog:D_ADMIN(playerid, response, listitem, inputtext[]) {
 
