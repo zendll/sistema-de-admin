@@ -30,7 +30,6 @@ new PlayerInfo[MAX_PLAYERS][pinfo];
 
 /*                                  Natives 
 
-                            native SetAdmin(playerid, level);
                             native AvisarAdmins(COLOR, const string[], level);
                             native AdminsCargos(playerid);
 
@@ -106,10 +105,3 @@ stock AdminsCargos(playerid) {
     return str;
 }
 
-//setar admin no player ex comando dar admin ou remover slr
-stock SetAdmin(playerid, level) {
-    if (level < 0 || level > 7) return 0; 
-    PlayerInfo[playerid][pAdmin] = level; 
-    SendClientMessage(playerid, va_return("Seu cargo atual é: %s", AdminsName(playerid)));
-    return 1; 
-}
